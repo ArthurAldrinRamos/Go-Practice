@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"strings"	
+	"strings"
 )
 
 func main() {
@@ -40,7 +40,11 @@ func main() {
 		fmt.Print("Tickets to book: ")
 		fmt.Scan(&userTickets)
 
-		if userTickets <= remainingTickets {
+		isValidName := len(firstName) >= 2 && len(lastName) >= 2
+		isValidEmail := strings.Contains(email, "@")
+		isValidTicketCount := userTickets > 0 && userTickets <= remainingTickets
+
+		if isValidName && isValidEmail && isValidTicketCount {
 			remainingTickets = remainingTickets - userTickets
 			bookings = append(bookings, firstName + " " + lastName)
 
@@ -65,9 +69,23 @@ func main() {
 				break
 			}
 		} else {
-			fmt.Println("======================================")
-			fmt.Printf("We only have %v remaining tickets!! You can't book %v tickets\n", remainingTickets, userTickets)
-			fmt.Println("======================================")
+
+				fmt.Println("======================================")
+				fmt.Println("ERROR: INPUT DATA IS WRONG. PLEASE TRY AGAIN!")
+
+			if !isValidName {
+				fmt.Println("-Please Check your Name: It should be at least 2 characters long.")
+			}
+
+			if !isValidEmail {
+				fmt.Println("-Please Check your Email: It should contanin '@'")
+			}
+
+			if !isValidTicketCount {
+				fmt.Printf("-We only have %v tickets remaining! We can't process %v tickets.\n", remainingTickets, userTickets)
+			}
+
+				fmt.Println("======================================")
 		}
 	}
 }
