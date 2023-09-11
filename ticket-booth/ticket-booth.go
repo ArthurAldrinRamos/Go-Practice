@@ -50,14 +50,11 @@ func main() {
 
 			fmt.Printf("%v Remaining Tickets\n", remainingTickets)
 
-			firstNames := []string{}
-			for _, booking := range bookings {
-				names := strings.Fields(booking)
-				firstNames = append(firstNames, names[0])
-			}
+			firstNames := callFirstNames(bookings)
+
 			fmt.Printf("People who booked: %v", firstNames)
 			fmt.Println("\n======================================")
-
+			
 			if remainingTickets == 0 {
 				fmt.Println("======================================")
 				fmt.Println("Oops!! Tickets are sold out!😟 Come back next year.")
@@ -94,4 +91,15 @@ func greetUsers(confName string, remTickets int, confTickets uint) {
 	fmt.Println("Get your tickets now to attend!")
 	fmt.Println("======================================")
 	
+}
+
+func callFirstNames(bookings []string) []string {
+
+	firstNames := []string{}
+			for _, booking := range bookings {
+				names := strings.Fields(booking)
+				firstNames = append(firstNames, names[0])
+			}
+
+			return firstNames
 }
