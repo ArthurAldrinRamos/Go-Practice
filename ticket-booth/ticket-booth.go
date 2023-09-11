@@ -9,15 +9,11 @@ func main() {
 
 	bookings := []string{}
 
-	conferenceName := "Go Conference"
+	conferenceName := "Golang Conference"
 	remainingTickets := 50
 	const conferenceTickets uint = 50
 
-	fmt.Println("======================================")
-	fmt.Printf("Welcome to the %v booking application.\n", conferenceName)
-	fmt.Printf("We have a total of %v tickets and %v are still available.\n", conferenceTickets, remainingTickets)
-	fmt.Println("Get your tickets now to attend!")
-	fmt.Println("======================================")
+	greetUsers(conferenceName, remainingTickets, conferenceTickets)
 
 	for {
 
@@ -88,4 +84,14 @@ func main() {
 				fmt.Println("======================================")
 		}
 	}
+}
+
+func greetUsers(confName string, remTickets int, confTickets uint) {
+
+	fmt.Println("======================================")
+	fmt.Printf("Welcome to the %v booking application.\n", confName)
+	fmt.Printf("We have a total of %v tickets and %v are still available.\n", confTickets, remTickets)
+	fmt.Println("Get your tickets now to attend!")
+	fmt.Println("======================================")
+	
 }
