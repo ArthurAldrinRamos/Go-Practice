@@ -23,8 +23,6 @@ func main(){
 
 	fmt.Println(ipagDikit(firstName, lastName))
 
-
-
 	// fmt.Println(firstNum, secondNum)
 	
 }
