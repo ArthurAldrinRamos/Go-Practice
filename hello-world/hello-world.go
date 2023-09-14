@@ -65,5 +65,15 @@ func main(){
 
 
 	// fmt.Println(firstNum, secondNum)
+
+	var m map[string]string
+	fmt.Println(m==nil)
+
+	m = map[string]string{}
+	fmt.Println(m==nil)
+
+
 	
+
+
 }
