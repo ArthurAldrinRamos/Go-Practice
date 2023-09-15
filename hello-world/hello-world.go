@@ -72,6 +72,8 @@ func main(){
 	m = map[string]string{}
 	fmt.Println(m==nil)
 
+	//PRACTICE
+
 
 	
 
