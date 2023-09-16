@@ -8,6 +8,12 @@ func ipagDikit(s1, s2 string) string {
 	return s1 + s2
 }
 
+func moodToday(dayToday string) {
+
+	fmt.Println(dayToday)
+
+} 
+
 
 type catType struct {
 	name string
@@ -174,4 +180,25 @@ func main(){
 	} else {
 		fmt.Println("Pussy info doesn't exist")
 	}
+
+	//Switch Statement
+
+	wholeWeekDay := []string{"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"}
+	
+	for _, weekDay := range wholeWeekDay {
+
+		switch weekDay {
+		 case "Monday": moodToday("Bit tired...")
+		 case "Tuesday", "Wednesday", "Thursday": moodToday("Mehh...")
+		 case "Friday": moodToday("TGIF!!!")
+		
+		 default: moodToday("Party Party!!!!!!!!")
+		}
+
+	} 
+
+	
+
+
+
 }
