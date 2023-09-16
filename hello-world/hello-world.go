@@ -21,127 +21,122 @@ func (c catType) catScratch() {
 
 func main(){
 
-	fmt.Println("Hello World")
+	// fmt.Println("Hello World")
 
-	firstNum := 1
-	secondNum := 2
+	// firstNum := 1
+	// secondNum := 2
 
-	firstName := "Arthur "
-	lastName := "Ramos"
+	// firstName := "Arthur "
+	// lastName := "Ramos"
 
-	if (firstNum > secondNum) {
-		fmt.Println("First Number is greater than the Second Number")
-	} else {
-		fmt.Println("Mehhh")
-	}
+	// if (firstNum > secondNum) {
+	// 	fmt.Println("First Number is greater than the Second Number")
+	// } else {
+	// 	fmt.Println("Mehhh")
+	// }
 
-	fmt.Println(ipagDikit(firstName, lastName))
+	// fmt.Println(ipagDikit(firstName, lastName))
 
-	type ninja struct {
+	// type ninja struct {
 
-		name string
-		weapons []string
-		level int
+	// 	name string
+	// 	weapons []string
+	// 	level int
 
-	}
+	// }
 
-	arthur := ninja {
+	// arthur := ninja {
 
-		name: "Arthur",
-		weapons: []string{"Katana", "Bow and Arrows", "Ninja Star"},
-		level: 1,
+	// 	name: "Arthur",
+	// 	weapons: []string{"Katana", "Bow and Arrows", "Ninja Star"},
+	// 	level: 1,
 	
-	}
+	// }
 
-	type dojo struct {
+	// type dojo struct {
 
-		name string
-		ninja ninja
+	// 	name string
+	// 	ninja ninja
 
-	}
-
-
-	arthurDojo := dojo {
-
-		name: "Art Dojo",
-		ninja: arthur,
-
-	}
-
-	fmt.Println(arthur)
-	fmt.Println(arthur.name)
-	fmt.Printf("His weapons are: %v\n", arthur.weapons)
-	fmt.Printf("He is Level: %v\n", arthur.level)
-	fmt.Printf(arthurDojo.ninja.name)
+	// }
 
 
-	// fmt.Println(firstNum, secondNum)
+	// arthurDojo := dojo {
 
-	var m map[string]string
-	fmt.Println(m==nil)
+	// 	name: "Art Dojo",
+	// 	ninja: arthur,
 
-	m = map[string]string{}
-	fmt.Println(m==nil)
+	// }
 
-	//PRACTICE
+	// fmt.Println(arthur)
+	// fmt.Println(arthur.name)
+	// fmt.Printf("His weapons are: %v\n", arthur.weapons)
+	// fmt.Printf("He is Level: %v\n", arthur.level)
+	// fmt.Printf(arthurDojo.ninja.name)
 
-	//for-each loop
 
-	s := "Hello World"
+	// // fmt.Println(firstNum, secondNum)
 
-	// for i, c := range s {
-	// 	fmt.Printf("%d %c", i, c)
+
+	// //PRACTICE
+
+	// //for-each loop
+
+	// s := "Hello World"
+
+	// // for i, c := range s {
+	// // 	fmt.Printf("%d %c", i, c)
+	// // 	fmt.Println()
+	// // }
+
+	// for _, c:= range s {
+	// 	fmt.Printf("%c", c)
 	// 	fmt.Println()
 	// }
 
-	for _, c:= range s {
-		fmt.Printf("%c", c)
-		fmt.Println()
-	}
+	// listOfNames := []string{"kekw", "meow", "lmao"}
 
-	listOfNames := []string{"kekw", "meow", "lmao"}
+	// for i, names := range listOfNames {
+	// 	fmt.Printf("%d) %v", i, names)
+	// 	fmt.Println()
+	// }
 
-	for i, names := range listOfNames {
-		fmt.Printf("%d) %v", i, names)
-		fmt.Println()
-	}
+	// listOfSchool := []string{"DLSAU", "PUP", "UST", "UCC"}
 
-	listOfSchool := []string{"DLSAU", "PUP", "UST", "UCC"}
-
-	for i, school := range listOfSchool {
-		fmt.Printf("%d) %v", i, school)
-		fmt.Println()
-	}
+	// for i, school := range listOfSchool {
+	// 	fmt.Printf("%d) %v", i, school)
+	// 	fmt.Println()
+	// }
 	 
-	listOfCats := []string{"Alyanna", "Strok", "Bunso", "Tonky", "Tjoeki", "Ponkan", "Oreo", "Duryan", "Pabo"}
+	// listOfCats := []string{"Alyanna", "Strok", "Bunso", "Tonky", "Tjoeki", "Ponkan", "Oreo", "Duryan", "Pabo"}
 
-	for _, cats := range listOfCats {
-		fmt.Printf(cats)
-		fmt.Println()
-	}
+	// for _, cats := range listOfCats {
+	// 	fmt.Printf(cats)
+	// 	fmt.Println()
+	// }
 
-	alyanna := catType {
-		name: "Alyanna",
-		color: "Black and White",
-		traits: []string{"Loves aircon", "Fierce", "Loyal"},
-	}
+	// alyanna := catType {
+	// 	name: "Alyanna",
+	// 	color: "Black and White",
+	// 	traits: []string{"Loves aircon", "Fierce", "Loyal"},
+	// }
 
-	bunso := catType {
-		name: "Bunso",
-		color: "Orange",
-		traits: []string{"Noisy af", "Dont know how to fight", "Weird Tail"},
-	}
+	// bunso := catType {
+	// 	name: "Bunso",
+	// 	color: "Orange",
+	// 	traits: []string{"Noisy af", "Dont know how to fight", "Weird Tail"},
+	// }
 
-	strok := catType {
-		name: "Strok",
-		color: "Orange",
-		traits: []string{"Asshole", "Loyal", "Wobbly", "Ugly ass tail"},
-	}
+	// strok := catType {
+	// 	name: "Strok",
+	// 	color: "Orange",
+	// 	traits: []string{"Asshole", "Loyal", "Wobbly", "Ugly ass tail"},
+	// }
 
-	fmt.Println(alyanna.name)
-	fmt.Println(bunso.name)
-	fmt.Println(strok.name)
-	alyanna.catScratch()
+	// fmt.Println(alyanna.name)
+	// fmt.Println(bunso.name)
+	// fmt.Println(strok.name)
+	// alyanna.catScratch()
 
 
 	//Pointers
@@ -155,7 +150,28 @@ func main(){
 	// a = 23
 	// fmt.Println(b)
 
+	//Maps
+
+	// var m map[string]string
+	m := map[string]string{"Strok": "Baldadong Orenj na Pussy"}
+
+	m["Alyanna"] = "Black Pussy"
+	m["Bunso"] = "Orenj Kalbong Pussy"
+	m["Tonky"] = "Orenj Iyaking Pussy"
+
+	fmt.Println(m["Alyanna"])
+	fmt.Println(m)
 	
+	anongPussy, ok := m["Tonky"] 
+	if ok {
+		fmt.Println(anongPussy)
+	} else {
+		fmt.Println("Pussy info doesn't exist")
+	}
 
-
+	if anongPussy, ok := m["Alyanna"]; ok {
+		fmt.Println(anongPussy)
+	} else {
+		fmt.Println("Pussy info doesn't exist")
+	}
 }
