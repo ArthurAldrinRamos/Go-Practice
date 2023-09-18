@@ -18,8 +18,10 @@ func main() {
 	bunso := pussyCat {"Bunso", "Orenj Kalbo", "an"}
 	strok := pussyCat {"Strok", "Orenj Baldado", "an"}
 	tonky := pussyCat {"Tonky", "Orenj Iyakin", "an"}
+	oreo := pussyCat {"Oreo", "Black n White", "a"}
+	ponky := pussyCat {"ponky", "Orenj Masungit", "an"}
 
-	theCats := [4]pussyCat{alyanna, bunso, strok, tonky}
+	theCats := [6]pussyCat{alyanna, bunso, strok, tonky, oreo, ponky}
 
 	templatePath := "C:/Users/user/OneDrive/Desktop/Go Practice/text-template-practice/template.txt"
 
@@ -37,4 +39,5 @@ func main() {
 		fmt.Println(err)
 	}
   }
+
 }
